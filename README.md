@@ -6,3 +6,6 @@ This project contains the code for secuirty of springboot application which gene
 First step is to generate the JWT token when user name and password match, for this there is getToken() method of TokenAuthentication class which is triggerd by "/usermang/v1/login" url path.
 After obtaining token you can access any service using this token.
 ex- Authorization Bearer xxxxxxxxxxxxxxxxxxxxxxxxxTokenXXXXXXXXXXXXXXXXXXXXX
+
+For authorization, there is a annotation Authorization.class
+if you put Authorization("ALL") over the services, your controller would redirect to authorization realm where privilege would be check.
